@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-auth=$(python -c "import base64; print base64.b64encode('${ES_USERNAME}:${ES_PASSWORD}')")
+auth=$(python2 -c "import base64; print base64.b64encode('${ES_USERNAME}:${ES_PASSWORD}')")
 
 echo 'add movies in bulk'
 curl \
